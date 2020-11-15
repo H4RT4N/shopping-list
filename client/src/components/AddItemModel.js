@@ -33,7 +33,7 @@ class AddItemModal extends Component {
 
     this.props.addItem(newItem);
     this.toggle();
-    window.location.reload(false);
+    setTimeout(() => window.location.reload(), 900);
   };
 
   render() {

@@ -18,7 +18,7 @@ class ShoppingList extends Component {
       <div className="container">
         <ul className="list-group m-4">
           {items
-            .sort((a, b) => a.category.localeCompare(b.category))
+            .sort((a, b) => a.category > b.category)
             .map(({ _id, name, category }) => (
               <li className="list-group-item p-2" key={_id}>
                 <strong> {name} </strong>

@@ -16,7 +16,6 @@ class DeleteAllButton extends Component {
   onDeleteAll = (e) => {
     this.props.deleteAllItems();
     this.toggle();
-    window.location.reload(false);
   };
 
   render() {
