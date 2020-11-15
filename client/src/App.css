@@ -1,0 +1,29 @@
+#particlebg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: linear-gradient(
+    45deg,
+    #000520,
+    #070b34,
+    #141852,
+    #092566,
+    #0e628a
+  );
+  background-size: 600% 600%;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
