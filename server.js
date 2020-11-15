@@ -7,10 +7,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('This is the backend.');
+});
+
 // MongoDB setup
 const uri = require("./config/constants").MONGOURI;
 mongoose
-  .connect(uri || process.env.MONGODB_URI, {
+  .connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
